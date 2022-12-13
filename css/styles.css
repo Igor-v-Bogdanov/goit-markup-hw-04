@@ -128,17 +128,14 @@ img {
 /* HERO */
 
 .section-hero {
-  display: block;
   padding: 192px 0;
   text-align: center;
-  background-color: var(--dark-color);
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  height: 600px;
   margin: 0 auto;
   max-width: 1600px;
   background-size: cover;
@@ -175,7 +172,8 @@ img {
 .button-hero:hover,
 .button-hero:focus {
   background: var(--pb-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .button-hero:active {
@@ -212,10 +210,11 @@ img {
 }
 
 .scills-icon-bg {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light-color);
   height: 112px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 
@@ -318,8 +317,7 @@ img {
 .sonet-set {
   display: flex;
   gap: 24px;
-  margin-top: 8px;
-  padding: 4px 0;
+  margin-top: 12px;
 }
 
 .sonet-set > .sonet-unit {
@@ -523,7 +521,7 @@ img {
 
 .card-shadow {
   display: block;
-  border: 0.5px solid var(--light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .card-shadow:hover,
